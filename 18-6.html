@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The <"form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+        <br>
+        1- The <"input> Element <br>
+        2- The <"label> Element <br>
+        The for attribute of the <"label> tag should be equal to the id attribute of the <"input> element to bind them together. <br>
+        Notice that each input field must have a name attribute to be submitted. If the name attribute is omitted, the value of the input field will not be sent at all. <br>
+        3- The Action Attribute <br> <form action="/action_page.php"></form>
+        4- The Target Attribute <br> <form action="/action_page.php" target="_blank"></form>
+        5- The Autocomplete Attribute <br> <form action="/action_page.php" autocomplete="on"></form>
+        6- The Novalidate Attribute <br> <form action="/action_page.php" novalidate></form>
+        7- The Method Attribute <br> <form action="/action_page.php" method="get"></form> <br> <form action="/action_page.php" method="post"></form>
+   
+
+    </p>
+
+    <form action="/action_page.php" target="_blank" method="get">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Abeda"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Aljarrah"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+    <form action="/action_page.php" target="_blank" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Abeda"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Aljarrah"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+
+
+      
+
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Abeda"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Aljarrah">
+    </form>
+
+    <p>
+    <input type="text">	Displays a single-line text input field <br>
+    <input type="radio">	Displays a radio button (for selecting one of many choices) <br>
+    <input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices) <br>
+    <input type="submit">	Displays a submit button (for submitting the form) <br>
+    <input type="button">	Displays a clickable button
+    </p>
+
+    <p>
+        The HTML <"form> Elements <br>
+        1- The <"input> Element <br>
+        2- The <"label> Element <br>
+        3- The <"select> Element <br>
+        4- The <"textarea> Element <br>
+        5- The <"button> Element <br>
+        6- The <"fieldset> and <"legend> Elements <br>
+        7- The <"datalist> Element <br>
+        8- The <"output> Element <br>
+    </p>
+    <h2>The select Element</h2>
+
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>
+
+<p>
+    <"header> - Defines a header for a document or a section <br>
+    <"nav> - Defines a set of navigation links <br>
+    <"section> - Defines a section in a document <br>
+    <"article> - Defines an independent, self-contained content <br>
+    <"aside> - Defines content aside from the content (like a sidebar) <br>
+    <"footer> - Defines a footer for a document or a section <br>
+    <"details> - Defines additional details that the user can open and close on demand <br>
+    <"summary> - Defines a heading for the <"details> element <br>
+</p>
+
+<video width="400" controls>
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+</video>
+
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IDDmrzzB14M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>

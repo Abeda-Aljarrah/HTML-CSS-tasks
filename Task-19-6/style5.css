@@ -1,0 +1,33 @@
+body{
+    background-color:antiquewhite;
+    
+}
+::highlight(Ipsum) {
+    color: #ad26ad;
+    /* text-decoration: underline; */
+  }
+.first,.third{
+    border: 1px solid;
+    background-color: white;
+    margin: 5px;  
+}
+h2, p {
+    margin-left: 10px;
+}
+h2{
+    direction: rtl;
+    text-align:left;
+}
+.second{
+    border: 2px dashed black;
+    background-color: white;
+    margin-top: 10px;
+}
+.ps{
+    border: 2px dashed red;
+    margin: 5px;
+}
+
+.hth,.pth{
+    color: #ad26ad;
+}

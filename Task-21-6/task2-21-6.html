@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px 20px;
+        }
+        .first{
+            grid-column: 1/4;
+            height: 50px;
+        }
+        .sec{
+            grid-column: 1/3;
+            height: 100px;
+        }
+        .fourth{
+            height: 100px;
+        }
+        .eight{
+            grid-column: 2/4;
+            height: 100px;
+        }
+        .thirdteen{
+            grid-column: 1/4;
+            height: 50px;
+        }
+        .cont2{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column: 1/4;
+            grid-gap: 10px 20px;
+            height: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div style="background-color: gray;" class="first">1</div>
+        <div class="sec" style="background-color: blue;">2</div>
+        <div class="third" style="background-color: lightblue;">3</div>
+        <div class="fourth" style="background-color: yellow;">4</div>
+        <div class="fifth" style="background-color: yellow;">5</div>
+        <div class="six" style="background-color: yellow;">6</div>
+        <div class="sev" style="background-color: lightblue;">7</div>
+        <div class="eight" style="background-color: blue;">8</div>
+        <div class="cont2">
+            <div class="nine" style="background-color: orange;">9</div>
+            <div class="ten" style="background-color: orange;">10</div>
+            <div class="ele" style="background-color: orange;">11</div>
+            <div class="tw" style="background-color: orange;">12</div>
+        </div>  
+        <div class="thirdteen" style="background-color: gray;">13</div>
+    </div> 
+</body>
+</html>

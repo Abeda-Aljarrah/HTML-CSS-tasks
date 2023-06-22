@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px 20px;
+        }
+        .first{
+            grid-column: 1/4;
+            height: 200px;
+        }
+      
+        .fourth{
+            height: 300px;
+        }
+       
+        .cont2{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-column: 1/4;
+            grid-gap: 10px 20px;
+            height: 150px;
+        }
+        @media screen and (max-width:480px){
+            .cont{
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 10px 20px;
+            }
+            .first{
+                grid-column: 1/4;
+                height: 200px;
+            }
+            
+            .yellow{
+                grid-column: 1/4;
+                height: 150px;
+            } 
+        
+            .cont2{
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 10px 20px;
+            }
+            .or{
+                grid-column: 1/4;
+                height: 150px;
+            }  
+        }
+        @media screen and (min-width:481px) and (max-width:768px) {
+            .cont{
+                display: grid;
+                grid-template-columns: auto;
+                grid-gap: 10px 20px;
+            }
+            .first{
+                grid-column: 1/4;
+                height: 200px;
+            }
+            
+            .yellow{
+                grid-column: 1/4;
+                height: 150px;
+            } 
+        
+            .cont2{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                grid-gap: 10px 20px;
+            }
+             
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div style="background-color: gray;" class="first"></div>
+        <div class="yellow fourth" style="background-color: yellow;"></div>
+        <div class="yellow fifth" style="background-color: yellow;"></div>
+        <div class="yellow six" style="background-color: yellow;"></div>
+        <div class="cont2">
+            <div class="or nine" style="background-color: orange;"></div>
+            <div class="or ten" style="background-color: orange;"></div>
+            <div class="or ele" style="background-color: orange;"></div>
+            <div class="or tw" style="background-color: orange;"></div>
+        </div>  
+    </div> 
+</body>
+</html>

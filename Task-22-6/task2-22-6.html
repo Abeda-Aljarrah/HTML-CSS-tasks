@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .cont{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px 20px;
+    }
+    .first{
+        grid-column: 1/4;
+        height: 100px;
+    }
+    .cont2{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        padding: 10px;
+        height: 200px;
+        padding-bottom: 200px;
+    }
+    .cont3{
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;        
+    }
+
+    @media screen and (max-width:480px) {
+
+        .cont{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px 20px;
+        }
+         .first{
+        grid-column: 1/4;
+        height: 100px;
+        }
+        .cont2{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        padding: 10px;
+        }
+        .cont3{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 10px; 
+        height: 200px;       
+        }
+        .ele{
+            grid-column: 1/4;
+            height: 100px;
+        }
+        
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {
+        .cont{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 10px 20px;
+        }
+         .first{
+        grid-column: 1/4;
+        height: 125px;
+        }
+        .cont2{
+        display: grid;
+        grid-column: 1/4;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+        height: 70px;
+        }
+        .cont3{
+        grid-column: 1/4;
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 10px; 
+        height: 300px;       
+        }
+        .ele{
+            grid-column: 1/4;
+            height: 125px;
+        }
+        
+    }
+
+</style>
+<body>
+    <div class="cont">
+
+        <div style="background-color:lightskyblue;" class="first"></div>
+
+        <div class="cont2" style="background-color: orange;">
+            <div class="sec" style="background-color:bisque;"></div>
+            <div class="third" style="background-color:bisque;"></div> 
+            <div class="fourth" style="background-color:bisque"></div>
+            <div class="fifth" style="background-color:bisque"></div> 
+        </div>
+
+        <div class="cont3">
+            <div class="six" style="background-color:lightgray;"></div>
+            <div class="sev" style="background-color:lightgray;"></div>
+            <div class="eight" style="background-color:lightgray;"></div>
+            <div class="nine" style="background-color:lightgray;"></div>
+            <div class="ten" style="background-color:lightgray;"></div>
+
+        </div>
+        
+        <div class="ele" style="background-color:lightgreen;"></div>
+        
+    </div> 
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        background-color:chartreuse;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: div;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        border-radius: 10px;
+    }
+    @keyframes div {
+        0% {background:linear-gradient(green,yellow); left: 0px; top: 0px;}
+        25% {background:linear-gradient(blue,green); left:200px; top: 0px;}
+        50% {background:linear-gradient(pink,brown);left: 200px;top: 200px;}
+        75%{background:linear-gradient(orange,yellow);left: 0px; top: 200px;}
+        100%{background:linear-gradient(blueviolet,bisque);left: 0px; top: 0px;} 
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>

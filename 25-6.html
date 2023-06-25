@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/819c3187c5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+</head>
+<style>
+.one{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    transition: height 2s, width 3s, transform 3s;
+    /* transition-timing-function: linear; */
+    /* transition-timing-function: ease; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-in-out; */
+    transition-delay: 1s;
+    /* transition: width 2s linear 1s; */
+    animation-name: one;
+    animation-duration: 7s;
+    animation-iteration-count: 3; /*specifies the number of times an animation should run */
+    /* animation-iteration-count: infinite; */
+}
+.one:hover{
+    height: 300px;
+    width: 300px;
+    /* transform: rotate(180deg); */
+}
+.a{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    animation-name: a;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    font-family:'Belanosima', sans-serif;
+    /* animation-delay: -2s; Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for N seconds.
+
+                          In the following example, the animation will start as if it had already been playing for 2 seconds */
+}
+@keyframes a {
+    from{background-color: aqua;} to {background-color: blue;}
+    
+}
+@keyframes one {
+  0%   {background-color: brown;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+</style>
+<body>
+    <div class="a">Abeda Aljarrah</div>
+    <div class="one"></div>
+    <br>
+    <i class="fas fa-sharp fa-light fa-house"></i>
+    <!-- <i class="glyphicon glyphicon-cloud"></i>
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user"></i>
+    <i class="glyphicon glyphicon-envelope"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i> -->
+    <br><br>
+
+<!-- 
+    <i class="glyphicon glyphicon-cloud" style="font-size:24px;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:36px;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:48px;color:red;"></i>
+    <i class="glyphicon glyphicon-cloud" style="font-size:60px;color:lightblue;"></i> -->
+</body>
+</html>
